@@ -29,6 +29,32 @@ body {
   flex-direction: column;
 }
 
+.hero-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.hero-images {
+  flex: 1 1 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-images .card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  min-width: 0;
+}
+
 main { flex: 1 0 auto; }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -153,7 +179,7 @@ h1 {
 
 .hero p { max-width: 55ch; margin: 0 0 1.5rem; font-size: 1.05rem; }
 
-.hero-actions { display: flex; gap: 0.9rem; flex-wrap: wrap; }
+.hero-actions { display: flex; gap: 0.9rem; flex-wrap: wrap; margin-top: 10px; }
 
 .button {
   display: inline-block;
