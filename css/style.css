@@ -13,9 +13,13 @@
   --max-width: 960px;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -55,12 +59,25 @@ body {
   min-width: 0;
 }
 
-main { flex: 1 0 auto; }
+main {
+  flex: 1 0 auto;
+}
 
-img { max-width: 100%; height: auto; display: block; }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
-a { color: var(--pine); text-decoration-color: var(--medal); text-underline-offset: 3px; }
-a:hover { color: var(--medal); }
+a {
+  color: var(--pine);
+  text-decoration-color: var(--medal);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--medal);
+}
 
 :focus-visible {
   outline: 2px solid var(--medal);
@@ -82,6 +99,7 @@ a:hover { color: var(--medal); }
 }
 
 .site-header .container {
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -98,7 +116,10 @@ a:hover { color: var(--medal); }
   text-decoration: none;
   letter-spacing: 0.02em;
 }
-.brand:hover { color: var(--medal); }
+
+.brand:hover {
+  color: var(--medal);
+}
 
 .nav-toggle {
   display: none;
@@ -127,7 +148,10 @@ a:hover { color: var(--medal); }
   border-bottom: 2px solid transparent;
 }
 
-.site-nav a:hover { color: var(--white); border-bottom-color: var(--medal); }
+.site-nav a:hover {
+  color: var(--white);
+  border-bottom-color: var(--medal);
+}
 
 .site-nav a[aria-current="page"] {
   color: var(--white);
@@ -159,7 +183,10 @@ h1 {
   margin: 0 0 0.75rem;
 }
 
-.page-intro p { max-width: 60ch; margin: 0; }
+.page-intro p {
+  max-width: 60ch;
+  margin: 0;
+}
 
 /* ---------- Home hero ---------- */
 
@@ -175,11 +202,22 @@ h1 {
   align-items: center;
 }
 
-.hero h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); }
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+}
 
-.hero p { max-width: 55ch; margin: 0 0 1.5rem; font-size: 1.05rem; }
+.hero p {
+  max-width: 55ch;
+  margin: 0 0 1.5rem;
+  font-size: 1.05rem;
+}
 
-.hero-actions { display: flex; gap: 0.9rem; flex-wrap: wrap; margin-top: 10px; }
+.hero-actions {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
 
 .button {
   display: inline-block;
@@ -191,15 +229,35 @@ h1 {
   border: 1.5px solid var(--pine);
 }
 
-.button.primary { background: var(--pine); color: var(--white); }
-.button.primary:hover { background: var(--medal); border-color: var(--medal); color: var(--ink); }
-.button.secondary { color: var(--pine); background: transparent; }
-.button.secondary:hover { border-color: var(--medal); color: var(--medal); }
+.button.primary {
+  background: var(--pine);
+  color: var(--white);
+}
+
+.button.primary:hover {
+  background: var(--medal);
+  border-color: var(--medal);
+  color: var(--ink);
+}
+
+.button.secondary {
+  color: var(--pine);
+  background: transparent;
+}
+
+.button.secondary:hover {
+  border-color: var(--medal);
+  color: var(--medal);
+}
 
 
 /* ---------- Ledger (academics, extracurriculars) ---------- */
 
-.ledger { list-style: none; margin: 0; padding: 2.5rem 0; }
+.ledger {
+  list-style: none;
+  margin: 0;
+  padding: 2.5rem 0;
+}
 
 .ledger-entry {
   display: grid;
@@ -209,7 +267,9 @@ h1 {
   padding-bottom: 2.5rem;
 }
 
-.ledger-entry:last-child { padding-bottom: 1rem; }
+.ledger-entry:last-child {
+  padding-bottom: 1rem;
+}
 
 .ledger-date {
   font-family: var(--font-mono);
@@ -219,7 +279,9 @@ h1 {
   text-align: right;
 }
 
-.ledger-marker { position: relative; }
+.ledger-marker {
+  position: relative;
+}
 
 .ledger-marker::before {
   content: "";
@@ -232,7 +294,10 @@ h1 {
   transform: translateX(-50%);
 }
 
-.ledger-entry:last-child .ledger-marker::before { bottom: auto; height: 100%; }
+.ledger-entry:last-child .ledger-marker::before {
+  bottom: auto;
+  height: 100%;
+}
 
 .ledger-marker::after {
   content: "";
@@ -264,7 +329,10 @@ h1 {
   margin: 0 0 0.5rem;
 }
 
-.ledger-body p { margin: 0; max-width: 62ch; }
+.ledger-body p {
+  margin: 0;
+  max-width: 62ch;
+}
 
 /* ---------- Card grid (projects, home highlights) ---------- */
 
@@ -291,13 +359,20 @@ h1 {
   margin: 0 0 0.5rem;
 }
 
-.card p { margin: 0 0 0.75rem; font-size: 0.95rem; }
+.card p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
 
-.card .card-link { font-size: 0.9rem; }
+.card .card-link {
+  font-size: 0.9rem;
+}
 
 /* ---------- Simple content sections ---------- */
 
-.section { padding: 2.5rem 0; }
+.section {
+  padding: 2.5rem 0;
+}
 
 .section h2 {
   font-family: var(--font-display);
@@ -327,31 +402,82 @@ h1 {
   flex-shrink: 0;
 }
 
-.site-footer a { color: var(--white); }
+.site-footer a {
+  color: var(--white);
+}
 
 /* ---------- Responsive ---------- */
 
 @media (max-width: 720px) {
-  .nav-toggle { display: block; }
+  .nav-toggle {
+    display: block;
+  }
 
-  .site-nav { display: none; width: 100%; }
-  .site-nav.open { display: block; }
+  .site-nav {
+    display: none;
+    width: 100%;
+  }
 
-  .site-header .container { flex-wrap: wrap; }
+  .site-nav.open {
+    display: block;
+  }
 
-  .site-nav ul { flex-direction: column; gap: 0.25rem; padding: 0.5rem 0; }
-  .site-nav a { display: block; padding: 0.5rem 0; }
+  .site-header .container {
+    flex-wrap: wrap;
+  }
 
-  .hero .container { grid-template-columns: 1fr; }
-  .seal { width: 110px; height: 110px; }
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem 0;
+  }
 
-  .ledger-entry { grid-template-columns: 24px 1fr; }
-  .ledger-date { grid-column: 2; text-align: left; padding-top: 0; margin-bottom: 0.2rem; }
-  .ledger-marker { grid-column: 1; grid-row: 1 / span 2; }
-  .ledger-body { grid-column: 2; }
+  .site-nav a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr;
+  }
+
+  .seal {
+    width: 110px;
+    height: 110px;
+  }
+
+  .ledger-entry {
+    grid-template-columns: 24px 1fr;
+  }
+
+  .ledger-date {
+    grid-column: 2;
+    text-align: left;
+    padding-top: 0;
+    margin-bottom: 0.2rem;
+  }
+
+  .ledger-marker {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .ledger-body {
+    grid-column: 2;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  * { animation: none !important; transition: none !important; }
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
